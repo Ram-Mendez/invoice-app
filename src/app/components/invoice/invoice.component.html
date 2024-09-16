@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="card my-3">
+    <div class="card-header">
+      <h2>Ejemplo Factura</h2>
+    </div>
+    <div class="card-body">
+      <div class="col">
+        <invoice-view [id]="invoice.id" [name]="invoice.name"/>
+      </div>
+      <div class="row my-3">
+        <div class="col">
+          <client-view [client]="invoice.client"/>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col">
+          <company-view [company]="invoice.company"/>
+        </div>
+      </div>
+      <list-items [items]="invoice.items"/>
+    </div>
+  </div>
+</div>
