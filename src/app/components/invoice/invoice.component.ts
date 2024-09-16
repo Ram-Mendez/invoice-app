@@ -30,4 +30,7 @@ export class InvoiceComponent implements OnInit {
   }
 
 
+  removeItem(id: number) {
+    this.invoice = this.itemService.remove(id);
+  }
 }
