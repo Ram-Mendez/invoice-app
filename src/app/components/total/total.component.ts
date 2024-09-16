@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'total',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class TotalComponent {
-
+  @Input() total: number | undefined = 0;
 }
